@@ -339,12 +339,176 @@ h3{
     font-size: 1.6rem;
    
 }
-#About{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 23px;
+
     
+
+
+/* ABOUT SECTION */
+.about-section {
+     background-color:#081020;
+    padding: 80px 8%;
+    width: 100%;
 }
+
+.about-container {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 350px 1fr;
+    gap: 55px;
+    align-items: start;
+}
+
+/* PROFILE IMAGE */
+.about-image {
+    position: relative;
+    width: 100%;
+    max-width: 350px;
+    height: 430px;
+}
+
+.about-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 18px;
+    position: relative;
+    z-index: 2;
+    border: 5px solid white;
+}
+
+.image-border {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 3px solid #00ff66;
+    border-radius: 18px;
+    top: 18px;
+    left: 18px;
+}
+
+/* ABOUT CONTENT */
+.about-content h2 {
+    font-size: 38px;
+    color: #ffff;
+    margin: 10px 0;
+}
+
+.about-content h2 span {
+    color: #00ff66;
+}
+
+.section-label {
+    color: #00ff66;
+    font-weight: bold;
+    letter-spacing: 3px;
+    font-size: 13px;
+}
+
+.about-content h3 {
+    color: #e5dfd2;
+    margin: 15px 0;
+    font-size: 21px;
+}
+
+.about-content p {
+    color: #ffff;
+    font-size: 15px;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+
+.sub-heading {
+    margin-top: 28px !important;
+}
+
+.experience-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-top: 18px;
+}
+
+.experience-card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #e5dfd2;
+    transition: 0.3s ease;
+}
+
+.experience-card:hover {
+    transform: translateY(-6px);
+    border-color: #00ff66;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.experience-card i {
+    font-size: 28px;
+    margin-bottom: 12px;
+}
+
+.experience-card h4 {
+    color: #24352A;
+    margin-bottom: 8px;
+}
+
+.experience-card p {
+    font-size: 13px;
+    margin: 0;
+}
+
+/* CONTACT BUTTON */
+.about-btn {
+    display: inline-block;
+    background: #24352A;
+    color: white;
+    padding: 13px 28px;
+    text-decoration: none;
+    border-radius: 7px;
+    margin-top: 15px;
+    transition: 0.3s;
+}
+
+.about-btn:hover {
+    background:#00ff66;
+    color:#ffff;
+    transform: translateY(-3px);
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 850px) {
+    .about-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .about-image {
+        margin: auto;
+        height: 380px;
+    }
+}
+
+@media (max-width: 500px) {
+    .about-section {
+        padding: 55px 5%;
+    }
+
+    .about-image {
+        height: 320px;
+        max-width: 280px;
+    }
+
+    .about-content h2 {
+        font-size: 30px;
+    }
+
+    .experience-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 .jose img{
     border-radius: 50%;
     border: 4px solid #1e1e2f;
